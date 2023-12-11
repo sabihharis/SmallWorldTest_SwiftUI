@@ -14,6 +14,13 @@
 		AE63F18C2B25AE95004F6496 /* SmallWorldTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F18B2B25AE95004F6496 /* SmallWorldTestTests.swift */; };
 		AE63F1962B25AE95004F6496 /* SmallWorldTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F1952B25AE95004F6496 /* SmallWorldTestUITests.swift */; };
 		AE63F1982B25AE95004F6496 /* SmallWorldTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F1972B25AE95004F6496 /* SmallWorldTestUITestsLaunchTests.swift */; };
+		AE63F2182B264217004F6496 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F2172B264217004F6496 /* MoviesModel.swift */; };
+		AE63F21A2B264395004F6496 /* MoviesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F2192B264395004F6496 /* MoviesViewModel.swift */; };
+		AE63F21C2B264518004F6496 /* MovieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE63F21B2B264518004F6496 /* MovieCellView.swift */; };
+		AEE266562B271F87001C349A /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE266552B271F86001C349A /* ContentService.swift */; };
+		AEE266B02B2779F1001C349A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE266AF2B2779F1001C349A /* Constants.swift */; };
+		AEE266B32B279839001C349A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AEE266B22B279839001C349A /* Kingfisher */; };
+		AEE266B52B279A67001C349A /* MoviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE266B42B279A67001C349A /* MoviewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,12 @@
 		AE63F1912B25AE95004F6496 /* SmallWorldTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmallWorldTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE63F1952B25AE95004F6496 /* SmallWorldTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWorldTestUITests.swift; sourceTree = "<group>"; };
 		AE63F1972B25AE95004F6496 /* SmallWorldTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallWorldTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE63F2172B264217004F6496 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		AE63F2192B264395004F6496 /* MoviesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewModel.swift; sourceTree = "<group>"; };
+		AE63F21B2B264518004F6496 /* MovieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellView.swift; sourceTree = "<group>"; };
+		AEE266552B271F86001C349A /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		AEE266AF2B2779F1001C349A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AEE266B42B279A67001C349A /* MoviewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE266B32B279839001C349A /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +109,17 @@
 		AE63F1782B25AE94004F6496 /* SmallWorldTest */ = {
 			isa = PBXGroup;
 			children = (
+				AE63F2162B2641A6004F6496 /* Model */,
+				AE63F2152B2641A3004F6496 /* ViewModel */,
+				AE63F2142B2641A0004F6496 /* View */,
 				AE63F1792B25AE94004F6496 /* SmallWorldTestApp.swift */,
 				AE63F17B2B25AE94004F6496 /* ContentView.swift */,
 				AE63F17D2B25AE95004F6496 /* Assets.xcassets */,
 				AE63F17F2B25AE95004F6496 /* SmallWorldTest.entitlements */,
 				AE63F1802B25AE95004F6496 /* Preview Content */,
+				AE63F21B2B264518004F6496 /* MovieCellView.swift */,
+				AEE266552B271F86001C349A /* ContentService.swift */,
+				AEE266AF2B2779F1001C349A /* Constants.swift */,
 			);
 			path = SmallWorldTest;
 			sourceTree = "<group>";
@@ -129,6 +149,30 @@
 			path = SmallWorldTestUITests;
 			sourceTree = "<group>";
 		};
+		AE63F2142B2641A0004F6496 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AEE266B42B279A67001C349A /* MoviewDetail.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE63F2152B2641A3004F6496 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AE63F2192B264395004F6496 /* MoviesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE63F2162B2641A6004F6496 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE63F2172B264217004F6496 /* MoviesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +189,9 @@
 			dependencies = (
 			);
 			name = SmallWorldTest;
+			packageProductDependencies = (
+				AEE266B22B279839001C349A /* Kingfisher */,
+			);
 			productName = SmallWorldTest;
 			productReference = AE63F1762B25AE94004F6496 /* SmallWorldTest.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +264,9 @@
 				Base,
 			);
 			mainGroup = AE63F16D2B25AE94004F6496;
+			packageReferences = (
+				AEE266B12B279839001C349A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = AE63F1772B25AE94004F6496 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,6 +311,12 @@
 			files = (
 				AE63F17C2B25AE94004F6496 /* ContentView.swift in Sources */,
 				AE63F17A2B25AE94004F6496 /* SmallWorldTestApp.swift in Sources */,
+				AE63F2182B264217004F6496 /* MoviesModel.swift in Sources */,
+				AE63F21C2B264518004F6496 /* MovieCellView.swift in Sources */,
+				AEE266B02B2779F1001C349A /* Constants.swift in Sources */,
+				AE63F21A2B264395004F6496 /* MoviesViewModel.swift in Sources */,
+				AEE266562B271F87001C349A /* ContentService.swift in Sources */,
+				AEE266B52B279A67001C349A /* MoviewDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,10 +498,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmallWorldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -480,10 +537,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmallWorldTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -617,6 +675,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEE266B12B279839001C349A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEE266B22B279839001C349A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEE266B12B279839001C349A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AE63F16E2B25AE94004F6496 /* Project object */;
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "371D8C63-8336-41E0-A12B-8206762CB6D0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6AA0DE5-7E56-4E57-82DF-0B56C74EEC0B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmallWorldTest/ContentService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getMoviesData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C6AA0DE5-7E56-4E57-82DF-0B56C74EEC0B - dfacbab7e5e11773"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in closure #1 ((Swift.Result&lt;SmallWorldTest.MovieResponse, SmallWorldTest.ErrorCodes&gt;) -&gt; ()) -&gt; () in SmallWorldTest.ContentService.getMoviesData() -&gt; Combine.Future&lt;SmallWorldTest.MovieResponse, SmallWorldTest.ErrorCodes&gt;"
+                  moduleName = "SmallWorldTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabihharis/Desktop/SmallWorldTest/SmallWorldTest/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "C6AA0DE5-7E56-4E57-82DF-0B56C74EEC0B - dfacbab7e5e11773"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Foundation.Data, __C.NSURLResponse) throws -&gt; Foundation.Data in closure #1 ((Swift.Result&lt;SmallWorldTest.MovieResponse, SmallWorldTest.ErrorCodes&gt;) -&gt; ()) -&gt; () in SmallWorldTest.ContentService.getMoviesData() -&gt; Combine.Future&lt;SmallWorldTest.MovieResponse, SmallWorldTest.ErrorCodes&gt;"
+                  moduleName = "SmallWorldTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sabihharis/Desktop/SmallWorldTest/SmallWorldTest/ContentService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "244">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

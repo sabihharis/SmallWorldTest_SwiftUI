@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SmallWorldTestApp: App {
+ 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let viewModel = MoviesViewModel(service: ContentService())
+            ContentView(viewModel: viewModel)
         }
     }
 }

@@ -8,17 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel : MoviesViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                listSection
+            }
+            
+            .navigationTitle("Movies")
+            .accessibilityShowsLargeContentViewer()
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(viewModel: MoviesViewModel(service: ContentService()))
+}
+
+extension ContentView {
+    var listSection : some View {
+        Section {
+            ForEach(viewModel.moviesList) { item in
+                MovieCellView(item: item)
+                
+            }
+        }
+    }
 }
